@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <link rel="stylesheet" href="style.css">
     <title>iPhone 14 Pro Dynamic Island</title>
 </head>
+
 <body>
-    
+
     <input type="radio" name="theme" id="deep-purple" checked="checked">
     <input type="radio" name="theme" id="gold">
     <input type="radio" name="theme" id="space-black">
@@ -75,6 +77,30 @@
                             <div class="duration"></div>
                         </div>
                     </div>
+
+                    <!-- New Views -->
+                    <div class="compact-view">
+                        <img src="dino-icon.svg" alt="Dino" class="dino-icon">
+                    </div>
+                    <div class="minimal-view">
+                        <div class="left">
+                            <img src="dino-icon.svg" alt="Dino" class="dino-icon-small">
+                        </div>
+                        <div class="center">
+                            <span class="start-text">Start</span>
+                        </div>
+                        <div class="right">
+                            <span class="high-score">HI 00000</span>
+                        </div>
+                    </div>
+
+                    <div class="dino-game">
+                        <canvas id="gameCanvas" width="300" height="80"></canvas>
+                        <div class="game-ui">
+                            <div class="score">00000</div>
+                            <div class="start-message">Tap to Play</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="notch-blur"></div>
@@ -88,5 +114,7 @@
         <label for="silver" class="swatch"></label>
     </div>
 
+    <script src="script.js"></script>
 </body>
+
 </html>
